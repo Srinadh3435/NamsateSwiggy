@@ -1,5 +1,5 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
+import ResCard from "./ResCard";
+import GridCard from "./GridCard";
 
 const gridObj = [
     {
@@ -2038,52 +2038,6 @@ const resObj = [
     }
   ];
 
-const Headercomponent = () =>{
-    return(
-        <div className="header">
-            <div className="nav-logo-container">
-                <img className="nav-logo" src="https://1000logos.net/wp-content/uploads/2021/05/Swiggy-emblem.png" />
-            </div>
-            <div className="nav-items">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact Us</li>
-                    <li>Cart</li>                    
-                </ul>
-            </div>
-        </div>
-    );
-}
-
-const GridCard = (props) =>{
-    const {gridData} = props
-    return (
-        <div className="grid-card">
-            <img className="item-image" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/" + gridData.imageId } />
-        </div>
-    );
-}
-
-
-const ResCard = (props) =>{
-    const { resData } = props;
-
-    const {name,cloudinaryImageId,avgRating,sla,cuisines,areaName} = resData?.info;
-
-    return(
-        <div className="res-card">
-            <img className="res-logo"
-            src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + cloudinaryImageId } />
-            <h3>{name}</h3>
-            <p><span>{avgRating}</span> stars</p>
-            <p>{sla.deliveryTime} mins</p>
-            <p>{cuisines.join(" | ")}</p>
-            <p>{areaName}</p>
-        </div>
-    );
-}
-
 const BodyComponent = () =>{
     return(
         <div className="body">
@@ -2101,16 +2055,4 @@ const BodyComponent = () =>{
     );
 }
 
-const AppLayout = () =>{
-    return(
-        <div className="app">
-            <Headercomponent />
-            <BodyComponent />
-        </div>
-    );
-}
-
-
-const root = ReactDOM.createRoot(document.getElementById("app"))
-
-root.render(<AppLayout />)
+export default BodyComponent;
