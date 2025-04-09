@@ -12,7 +12,6 @@ const AppLayout = () =>{
     );
 }
 
-
 const root = ReactDOM.createRoot(document.getElementById("app"))
 
 root.render(<AppLayout />)

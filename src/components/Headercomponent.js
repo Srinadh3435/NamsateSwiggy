@@ -1,8 +1,10 @@
+import { LOGO_CDN } from "../utils/constants";
+
 const Headercomponent = () =>{
     return(
         <div className="header">
             <div className="nav-logo-container">
-                <img className="nav-logo" src="https://1000logos.net/wp-content/uploads/2021/05/Swiggy-emblem.png" />
+                <img className="nav-logo" src= {LOGO_CDN} />
             </div>
             <div className="nav-items">
                 <ul>
