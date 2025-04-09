@@ -21,6 +21,21 @@
     font-size: 24px;
 }
 
+
+.grid-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    width: 100%;
+    height: auto;
+    border: 1px solid rgb(249, 0, 0);
+}
+
+.item-image{
+    width: 180px;
+    height: 180px;
+}
+
 .res-container{
     display: flex;
     flex-wrap: wrap;
@@ -32,7 +47,6 @@
 
 .res-card{
     width: 200px;
-    height: 300px;
     padding: 5px;
     margin: 5px;
     background-color: #f0f0f0;
