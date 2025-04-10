@@ -1,6 +1,5 @@
 import ResCard from "./ResCard";
 import GridCard from "./GridCard";
-import resObj from "../utils/resObj";
 import gridObj from "../utils/gridObj";
 import { useEffect, useState } from "react";
 import Bodyshimmer from "./Bodyshimmer";
