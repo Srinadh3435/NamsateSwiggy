@@ -1,4 +1,5 @@
 import { GRID_IMAGE_CDN } from "../utils/constants";
+
 const GridCard = (props) =>{
     const {gridData} = props
     return (

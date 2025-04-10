@@ -1,6 +1,9 @@
+import { useState } from "react";
 import { LOGO_CDN } from "../utils/constants";
 
 const Headercomponent = () =>{
+    const [btnName,setBtnName] = useState("Login")
+
     return(
         <div className="header">
             <div className="nav-logo-container">
@@ -11,8 +14,12 @@ const Headercomponent = () =>{
                     <li>Home</li>
                     <li>About</li>
                     <li>Contact Us</li>
-                    <li>Cart</li>                    
-                </ul>
+                    <li>Cart</li>       
+                    <button className="login-button" onClick={()=>{
+                        btnName === "Login" ? setBtnName("Logout") : setBtnName("Login")
+                        }
+                    } >{btnName}</button>             
+                </ul>                
             </div>
         </div>
     );
